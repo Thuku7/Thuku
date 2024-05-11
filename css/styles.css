@@ -19,6 +19,7 @@ body {
   height: 100svh;
   
   position: relative;
+  display: flex;
 }
 
 .logo-box {
@@ -33,4 +34,110 @@ body {
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: .4rem;
+}
+
+.header-text {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.header-image {
+  width: 30%;
+  height: 100vh;
+  /* background-color: blue; */
+} 
+
+
+h1,h2,h3{
+  position: relative;
+  width: max-content;
+  font-family: monospace;
+  margin-left: 20rem;
+  font-size: 3.5rem;
+  color: black;
+  font-weight: 600;
+  
+  
+}
+
+
+h1::before,
+h1::after,
+h2::after,
+h2::before,
+h3::before,
+h3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+h1::before {
+  background-color: white;
+  animation: typewriter 4s steps(17) 5s forwards;
+ 
+
+}
+
+h2::before {
+  background-color: white;
+  animation: typewriter 4s steps(16) 9s forwards;
+ 
+
+}
+
+h3::before {
+  animation: typewriter 3s steps(8) 1s forwards;
+  background-color: white;
+
+}
+
+h1::after {
+  width: .225rem;
+  background: black;
+  animation: 
+  typewriter 4s steps(17) 5s forwards,
+  pointer 5.5s steps(17) 5s forwards;
+}
+
+h2::after {
+  width: .225rem;
+  background: black;
+  animation: typewriter 4s steps(16) 9s forwards,
+  pointer 6s steps(16) 9s infinite;
+}
+
+h3::after {
+  width: .225rem;
+  background: black;
+  animation: typewriter 3s steps(8) 1s forwards,
+  pointer 3.5s steps(8)  1s forwards;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes pointer {
+    to {
+      background: transparent;
+    }
+}
+
+@keyframes hidetext {
+  0%{
+    opacity: 0;
+    
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
