@@ -54,7 +54,7 @@ h1,h2,h3{
   position: relative;
   width: max-content;
   font-family: "Space Mono", monospace;
-  margin-left: 20rem;
+  margin-left: 16rem;
   font-size: 3.5rem;
   color: black;
   font-weight: 600;
@@ -150,10 +150,12 @@ h3::after {
   }
 
   90% {
-    opacity: .8;
-    transform: translateX(-5rem);
+    opacity: .7;
+    transform: translateX(-40rem);
     transform: scale(.6);
   }
+
+ 
 
   100% {
     opacity: 1;
@@ -174,9 +176,9 @@ h3::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 10.5%;
+  right: 5.5%;
   top: 10.5%;
-  animation: comeInLeft 7s ease-in  ;
+  animation: comeInLeft 9s ease-out  ;
  
 } 
 
