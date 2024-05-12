@@ -12,6 +12,8 @@ body {
   font-family: sans-serif;
   line-height: 1.7;
   color: #777;
+  
+  overflow: hidden;
 }
 
 .header {
@@ -20,6 +22,7 @@ body {
   
   position: relative;
   display: flex;
+ 
 }
 
 .logo-box {
@@ -44,17 +47,13 @@ body {
   align-items: center;
 }
 
-.header-image {
-  width: 30%;
-  height: 100vh;
-  /* background-color: blue; */
-} 
+
 
 
 h1,h2,h3{
   position: relative;
   width: max-content;
-  font-family: monospace;
+  font-family: "Space Mono", monospace;
   margin-left: 20rem;
   font-size: 3.5rem;
   color: black;
@@ -62,6 +61,8 @@ h1,h2,h3{
   
   
 }
+
+
 
 
 h1::before,
@@ -141,3 +142,70 @@ h3::after {
     opacity: 1;
   }
 }
+
+@keyframes comeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  90% {
+    opacity: .8;
+    transform: translateX(-5rem);
+    transform: scale(.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.header-image {
+  width: 35rem;
+  height: 35rem;
+  /* background-color: blue; */
+  background: black;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10.5%;
+  top: 10.5%;
+  animation: comeInLeft 7s ease-in  ;
+ 
+} 
+
+/* .header-image-container {
+ width: max-content;
+
+} */
+.header-image-container {
+  height: 100%;
+  width: 100%;
+ 
+  
+}
+
+#image-text {
+  background: url(../img/thuku.png);
+  -webkit-background-clip: text;
+  background-attachment: contain;
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: rgba(255,255,255,0);
+  background-position: center;
+  line-height: .8rem;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 100%;
+  
+  
+  
+  
+ 
+}
+
