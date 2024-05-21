@@ -61,30 +61,30 @@ h3::after {
 
 h1::before {
   background-color: white;
-  animation: typewriter 4s steps(17) 5s forwards; }
-
-h2::before {
-  background-color: white;
-  animation: typewriter 4s steps(16) 9s forwards; }
-
-h3::before {
-  animation: typewriter 3s steps(8) 1s forwards;
-  background-color: white; }
+  animation: typewriter 4s steps(17) 3s forwards; }
 
 h1::after {
   width: .225rem;
   background: black;
-  animation: typewriter 4s steps(17) 5s forwards, pointer 5.5s steps(17) 5s forwards; }
+  animation: typewriter 4s steps(17) 2.9s forwards, pointer 4.3s steps(17) 2.9s forwards; }
+
+h2::before {
+  background-color: white;
+  animation: typewriter 5s steps(16) 6s forwards; }
 
 h2::after {
   width: .225rem;
   background: black;
-  animation: typewriter 4s steps(16) 9s forwards, pointer 6s steps(16) 9s infinite; }
+  animation: typewriter 5s steps(16) 6s forwards, pointer 5.3s steps(16) 6s infinite; }
+
+h3::before {
+  animation: typewriter 2s steps(8) 1.6s forwards;
+  background-color: white; }
 
 h3::after {
   width: .225rem;
   background: black;
-  animation: typewriter 3s steps(8) 1s forwards, pointer 3.5s steps(8) 1s forwards; }
+  animation: typewriter 2s steps(8) 1.5s forwards, pointer 2.3s steps(8) 1.5s forwards; }
 
 @keyframes typewriter {
   to {
@@ -126,7 +126,7 @@ h3::after {
   align-items: center;
   right: 6.5%;
   top: 10.5%;
-  animation: comeInLeft 10s ease-out; }
+  animation: comeInLeft 7.5s ease-out; }
 
 /* .header-image-container {
  width: max-content;
