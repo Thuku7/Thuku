@@ -1,0 +1,20 @@
+.grid-layout {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-auto-rows: 100vh;
+}
+
+.page-trigger {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25vw 70vw;
+  grid-gap: 3vw;
+  overflow-x: hidden;
+}
+
+.page-name {
+  @include flex-display
+}
+

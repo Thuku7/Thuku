@@ -39,33 +39,6 @@ body {
     opacity: 1;
     transform: scale(1); } }
 
-.header {
-  height: 100vh;
-  height: 100svh;
-  position: relative;
-  display: flex; }
-  .header-text {
-    width: 70%;
-    height: 100vh;
-    display: flex;
-    justify-content: start;
-    align-items: center; }
-  .header-image {
-    width: 50rem;
-    height: 50rem;
-    /* background-color: blue; */
-    background: black;
-    overflow: hidden;
-    border: none;
-    position: absolute;
-    border-radius: 350rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    right: 8.5%;
-    top: 14.5%;
-    animation: comeInLeft 6.8s ease-out; }
-
 .logo-box {
   position: absolute;
   top: 2.0rem;
@@ -76,6 +49,19 @@ body {
     font-size: 2.8rem;
     text-transform: uppercase;
     letter-spacing: .4rem; }
+
+#image-text {
+  background: url(../img/thuku.png);
+  -webkit-background-clip: text;
+  background-attachment: contain;
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  background-position: center;
+  line-height: 1rem;
+  font-size: 1.5rem;
+  text-align-last: right;
+  width: 100%;
+  height: 100%; }
 
 h1, h2, h3 {
   position: relative;
@@ -130,19 +116,72 @@ h3::after {
   height: 100%;
   width: 100%; }
 
-#image-text {
-  background: url(../img/thuku.png);
-  -webkit-background-clip: text;
-  background-attachment: contain;
-  background-repeat: no-repeat;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  background-position: center;
-  line-height: 1rem;
-  font-size: 1.5rem;
-  text-align-last: right;
+.grid-layout {
+  height: 100%;
   width: 100%;
-  height: 100%; }
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-auto-rows: 100vh; }
+
+.page-trigger {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25vw 70vw;
+  grid-gap: 3vw;
+  overflow-x: hidden; }
+
+.page-name {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.header {
+  height: 100vh;
+  height: 100svh;
+  position: relative;
+  display: flex; }
+  .header-text {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .header-image {
+    width: 50rem;
+    height: 50rem;
+    /* background-color: blue; */
+    background: black;
+    overflow: hidden;
+    border: none;
+    position: absolute;
+    border-radius: 350rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 8.5%;
+    top: 14.5%;
+    animation: comeInLeft 6.8s ease-out; }
 
 .about {
   height: 100vh;
   background: blue; }
+
+.footerz {
+  height: 100vh;
+  background-color: blue;
+  grid-column: 1 / -1; }
+
+html.lenis, html.lenis body {
+  height: auto; }
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important; }
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain; }
+
+.lenis.lenis-stopped {
+  overflow: hidden; }
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none; }
