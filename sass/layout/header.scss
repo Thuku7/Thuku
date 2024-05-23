@@ -1,0 +1,29 @@
+.header {
+  height: 100vh;
+  height: 100svh;
+  
+  position: relative;
+  display: flex;
+
+  &-text {
+    width: 70%;
+    height: 100vh;
+    @include flex-display();
+  }
+
+  &-image {
+    width: 50rem;
+    height: 50rem;
+    /* background-color: blue; */
+    background: $black-color;
+    overflow: hidden;
+    border: none;
+    position: absolute;
+    border-radius: 350rem;
+    @include flex-display();
+    right: 8.5%;
+    top: 14.5%;
+    animation: comeInLeft 6.8s ease-out  ;
+  }
+ 
+}

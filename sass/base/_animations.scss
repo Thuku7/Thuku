@@ -1,0 +1,43 @@
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes pointer {
+    to {
+      background: transparent;
+    }
+}
+
+@keyframes hidetext {
+  0%{
+    opacity: 0;
+    
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes comeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(90rem);
+  }
+
+  90% {
+    opacity: .7;
+    transform: translateX(-100rem);
+    transform: scale(.6);
+  }
+
+ 
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

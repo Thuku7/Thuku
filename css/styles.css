@@ -13,30 +13,69 @@ body {
   font-family: sans-serif;
   line-height: 1.7; }
 
+@keyframes typewriter {
+  to {
+    left: 100%; } }
+
+@keyframes pointer {
+  to {
+    background: transparent; } }
+
+@keyframes hidetext {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes comeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(90rem); }
+  90% {
+    opacity: .7;
+    transform: translateX(-100rem);
+    transform: scale(0.6); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
 .header {
   height: 100vh;
   height: 100svh;
   position: relative;
   display: flex; }
+  .header-text {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+  .header-image {
+    width: 50rem;
+    height: 50rem;
+    /* background-color: blue; */
+    background: black;
+    overflow: hidden;
+    border: none;
+    position: absolute;
+    border-radius: 350rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    right: 8.5%;
+    top: 14.5%;
+    animation: comeInLeft 6.8s ease-out; }
 
 .logo-box {
   position: absolute;
   top: 2.0rem;
   left: 2.5rem; }
-
-.logo-box-text {
-  color: black;
-  font-weight: 700;
-  font-size: 2.8rem;
-  text-transform: uppercase;
-  letter-spacing: .4rem; }
-
-.header-text {
-  width: 70%;
-  height: 100vh;
-  display: flex;
-  justify-content: start;
-  align-items: center; }
+  .logo-box-text {
+    color: black;
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: .4rem; }
 
 h1, h2, h3 {
   position: relative;
@@ -71,12 +110,12 @@ h1::after {
 
 h2::before {
   background-color: white;
-  animation: typewriter 1.5s steps(16) 6s forwards; }
+  animation: typewriter 1.5s steps(16) 5s forwards; }
 
 h2::after {
   width: .225rem;
   background: black;
-  animation: typewriter 1.5s steps(16) 6s forwards, pointer 5.3s steps(16) 6s infinite; }
+  animation: typewriter 1.5s steps(16) 5s forwards, pointer 5.3s steps(16) 6s infinite; }
 
 h3::before {
   animation: typewriter 2s steps(8) 1.6s forwards;
@@ -87,52 +126,6 @@ h3::after {
   background: black;
   animation: typewriter 2s steps(8) 1.5s forwards, pointer 2.3s steps(8) 1.5s forwards; }
 
-@keyframes typewriter {
-  to {
-    left: 100%; } }
-
-@keyframes pointer {
-  to {
-    background: transparent; } }
-
-@keyframes hidetext {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes comeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(90rem); }
-  90% {
-    opacity: .7;
-    transform: translateX(-100rem);
-    transform: scale(0.6); }
-  100% {
-    opacity: 1;
-    transform: scale(1); } }
-
-.header-image {
-  width: 50rem;
-  height: 50rem;
-  /* background-color: blue; */
-  background: black;
-  overflow: hidden;
-  border: none;
-  position: absolute;
-  border-radius: 350rem;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  right: 8.5%;
-  top: 14.5%;
-  animation: comeInLeft 6.8s ease-out; }
-
-/* .header-image-container {
- width: max-content;
-
-} */
 .header-image-container {
   height: 100%;
   width: 100%; }
