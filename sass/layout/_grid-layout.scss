@@ -1,7 +1,7 @@
 .grid-layout {
- background-color: $black-color;
+//  background-color: $black-color;
 height: 100%;
-color: $white-color;
+
 
 }
 
@@ -15,11 +15,14 @@ color: $white-color;
 }
 
 .page-name {
-  @include flex-display
-  ;font-size: 3rem;
+  @include flex-center
+  ;font-size: 8.5rem;
 }
 
 #footer {
   height: 60vh;
  
 }
+
+
+

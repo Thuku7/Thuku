@@ -1,0 +1,13 @@
+.projectz {
+  @include flex-center;
+  color: $black-color;
+
+  &-image {
+    @include flex-center;
+    font-size: 5rem;
+    
+  }
+
+
+
+}

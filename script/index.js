@@ -28,7 +28,7 @@ pageTrigger.forEach(page => {
       trigger: page,
       start: "top bottom",
       end:"bottom 95%",
-      markers: true,
+      // markers: true,
       scrub: true
     },
     xPercent:0,
@@ -41,7 +41,7 @@ pageTrigger.forEach(page => {
       trigger: page,
       start: "top bottom",
       end:"bottom 95%",
-      markers: true,
+      // markers: true,
       scrub: true
     },
     xPercent:0,
@@ -54,7 +54,7 @@ pageTrigger.forEach(page => {
       trigger: page,
       start: "top bottom",
       end:"bottom 95%",
-      markers: true,
+      // markers: true,
       scrub: true
     },
     xPercent:0,
