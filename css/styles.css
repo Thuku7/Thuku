@@ -11,7 +11,8 @@ html {
 body {
   box-sizing: border-box;
   font-family: sans-serif;
-  line-height: 1.7; }
+  line-height: 1.7;
+  overflow: hidden; }
 
 @keyframes typewriter {
   to {
@@ -117,23 +118,24 @@ h3::after {
   width: 100%; }
 
 .grid-layout {
+  background-color: black;
   height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 100vw;
-  grid-auto-rows: 100vh; }
+  color: white; }
 
 .page-trigger {
   height: 100vh;
   display: grid;
-  grid-template-columns: 25vw 70vw;
-  grid-gap: 3vw;
-  overflow-x: hidden; }
+  grid-template-columns: 25vw 73vw;
+  grid-gap: 2vw; }
 
 .page-name {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-size: 3rem; }
+
+#footer {
+  height: 60vh; }
 
 .header {
   height: 100vh;
@@ -167,8 +169,7 @@ h3::after {
   background: blue; }
 
 .footerz {
-  height: 100vh;
-  background-color: blue;
+  height: 50vh;
   grid-column: 1 / -1; }
 
 html.lenis, html.lenis body {

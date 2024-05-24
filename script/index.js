@@ -2,10 +2,10 @@
 
 const pageTrigger = document.querySelectorAll(".page-trigger");
 
-pageTrigger.forEach(triggerz => {
-  let pageName = triggerz.querySelector(".page-name");
-  let pageContent = triggerz.querySelector('.page-content');
-  let footer = triggerz.querySelector(".footerz");
+pageTrigger.forEach(page => {
+  let pageName = page.querySelector(".page-name");
+  let pageContent = page.querySelector('.page-content');
+  let footer = page.querySelector(".footerz");
 
   gsap.set(pageName, {
     xPercent: -100,
@@ -13,7 +13,7 @@ pageTrigger.forEach(triggerz => {
   })
 
   gsap.set(pageContent, {
-    xPercent: -100,
+    xPercent: 100,
     opacity: 0
   })
 
@@ -24,11 +24,11 @@ pageTrigger.forEach(triggerz => {
   })
 
   gsap.to(pageName, {
-    ScrollTrigger: {
-      trigger: triggerz,
+    scrollTrigger: {
+      trigger: page,
       start: "top bottom",
-      end:"bottom 90%",
-      marker: true,
+      end:"bottom 95%",
+      markers: true,
       scrub: true
     },
     xPercent:0,
@@ -37,11 +37,24 @@ pageTrigger.forEach(triggerz => {
   })
 
   gsap.to(pageContent, {
-    ScrollTrigger: {
-      trigger: triggerz,
+    scrollTrigger: {
+      trigger: page,
       start: "top bottom",
-      end:"bottom 90%",
-      marker: true,
+      end:"bottom 95%",
+      markers: true,
+      scrub: true
+    },
+    xPercent:0,
+    opacity: 1
+
+  })
+
+  gsap.to(footer, {
+    scrollTrigger: {
+      trigger: page,
+      start: "top bottom",
+      end:"bottom 95%",
+      markers: true,
       scrub: true
     },
     xPercent:0,
